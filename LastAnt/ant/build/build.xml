@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ehtesham" default="run" basedir=".">
+<target name="create">
+<mkdir dir="lib"></mkdir>
+<mkdir dir="lol"></mkdir>
+<mkdir dir="pak"></mkdir>
+
+</target>
+<target name="delete">
+<delete dir="lol"></delete>
+</target>
+
+<target name="copy">
+<copydir src="C:\Users\Toshiba\Desktop\eclipse\LastAnt\src" dest="C:\Users\Toshiba\Desktop\eclipse\LastAnt\ant\build\lib"></copydir>
+</target>
+
+<target name="compile">
+<javac includeantruntime="false" srcdir="C:\Users\Toshiba\Desktop\eclipse\LastAnt\src" destdir="C:\Users\Toshiba\Desktop\eclipse\LastAnt\ant\build\pak">
+</javac>
+
+</target>
+<target name="run" depends="compile">
+<java classname="sha.antt">
+<classpath path="C:\Users\Toshiba\Desktop\eclipse\LastAnt\ant\build\pak"></classpath>
+</java>
+</target>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</project>
